@@ -1,6 +1,6 @@
 
 
-import React from 'react'
+
 import video1 from '../assets/video1.mp4'
 
 
