@@ -5,11 +5,11 @@ import { RootState } from '../store/store'
 import './Cart.css'
 import { CartModel } from '../store/cart'
 const Cart:React.FC = () => {
-const items =useSelector((state:any)=>state.cart.items)
+const items =useSelector((state:RootState)=>state.cart.items)
 const dispatch = useDispatch()
 
-const RemoveFromCart = (item:CartModel):CartModel=>{
-dispatch(removeItem(item))
+const RemoveFromCart = ()=>{
+dispatch(removeItem())
 }
 
   return (
@@ -25,7 +25,7 @@ dispatch(removeItem(item))
           <img src={item.image}/>
           <p>{item.name}</p>
           <p>#{item.price}</p>
-      <button onClick={()=>RemoveFromCart(item)}>Delete From Cart</button>
+      <button onClick={()=>RemoveFromCart()}>Delete From Cart</button>
         </div>
       ))}
     </ul>
