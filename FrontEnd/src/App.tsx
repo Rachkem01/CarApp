@@ -5,7 +5,7 @@ import Display from './components/Display'
 import './App.css'
 import { Provider } from 'react-redux'
 import {store} from './store/store'
-import Cart from './components/Cart'
+
 import {  Outlet, } from 'react-router-dom'
 import Footer from './components/Footer'
 
