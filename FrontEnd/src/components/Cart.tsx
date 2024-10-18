@@ -3,7 +3,7 @@ import {useDispatch, useSelector } from 'react-redux'
 import { removeItem } from '../store/cart'
 import { RootState } from '../store/store'
 import './Cart.css'
-import { CartModel } from '../store/cart'
+
 const Cart:React.FC = () => {
 const items =useSelector((state:RootState)=>state.cart.items)
 const dispatch = useDispatch()
