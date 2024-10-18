@@ -5,7 +5,7 @@ import { RootState } from '../store/store'
 import './Cart.css'
 import { CartModel } from '../store/cart'
 const Cart:React.FC = () => {
-const items =useSelector((state:RootState)=>state.cart.items)
+const items =useSelector((state:any)=>state.cart.items)
 const dispatch = useDispatch()
 
 const RemoveFromCart = (item:CartModel):CartModel=>{
