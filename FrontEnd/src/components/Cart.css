@@ -3,9 +3,13 @@
 .cart{
     display: grid;
     grid-template-columns: repeat(3,1fr)
+    margin-left:50px;
 }
 
 .cart img{
     width: 300px;
     height: 300px;
+}
+.cart p{
+    text-align:center;
 }
