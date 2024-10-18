@@ -8,7 +8,7 @@ const Cart:React.FC = () => {
 const items =useSelector((state:RootState)=>state.cart.items)
 const dispatch = useDispatch()
 
-const RemoveFromCart = (item:CartModel)=>{
+const RemoveFromCart = (item:CartModel):CartModel=>{
 dispatch(removeItem(item))
 }
 
