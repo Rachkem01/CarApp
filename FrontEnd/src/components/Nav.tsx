@@ -6,7 +6,7 @@ import { FaShoppingCart } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 import { useSelector } from 'react-redux'
 import { RootState } from '@reduxjs/toolkit/query'
-const Nav = () => {
+const Nav:React.FC = () => {
 const [menu, setMenu] = useState("menu")
 
 
