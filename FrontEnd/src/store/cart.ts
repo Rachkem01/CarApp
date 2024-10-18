@@ -30,7 +30,7 @@ else{
 }
 
      },
-     removeItem(state, action:PayloadAction<CartModel>){
+     removeItem(state){
         // state.items.filter((item)=>item.id !== action.payload.id)
         state.items.pop()
      }
