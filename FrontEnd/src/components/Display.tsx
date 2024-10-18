@@ -35,7 +35,7 @@ const addToCart =(car:CartModel )=>{
 dispatch(addItem(car))
 }
 
-const [cars, setCars] = useState<CarModel[]>([
+const [cars] = useState<CarModel[]>([
    {
     id:1,
     name:"Crystal Gold",
