@@ -1,0 +1,11 @@
+
+
+.cart{
+    display: grid;
+    grid-template-columns: repeat(3,1fr)
+}
+
+.cart img{
+    width: 300px;
+    height: 300px;
+}
