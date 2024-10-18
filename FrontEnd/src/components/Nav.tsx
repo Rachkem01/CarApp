@@ -11,7 +11,7 @@ const [menu, setMenu] = useState("menu")
 
 
 
-const items =useSelector((state:RootState)=>state.cart.items)
+const items =useSelector((state:any)=>state.cart.items)
 
 
 
